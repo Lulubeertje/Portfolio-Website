@@ -165,6 +165,7 @@ body {
 
 /*Geeft regels voor de links in de sectie*/
 .home-sci a {
+    overflow: hidden;
     position: relative;
     display: inline-flex;
     justify-content: center;
@@ -173,8 +174,42 @@ body {
     height: 40px;
     background: transparent;
     border: 2px solid #00abf0;
-    border-radius: 50px;
+    border-radius: 50%;
     font-size: 20px;
     color: #00abf0;
     text-decoration: none;
+    z-index: 1;
+    transition: 0.5;
+}
+/*Geeft de regels voor de socials' knopjes*/
+.home-sci a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background: #00abf0;
+    z-index: -1;
+    transition: 0.5s;
+}
+/*Geeft de regels voor de socials' knopjes*/
+.home-sci a:hover::before {
+    width: 100%;
+}
+/*Geeft de regels voor de socials' knopjes*/
+.home-sci a:hover {
+    color: #081b29;
+}
+
+
+.home-content img {
+    display: inline-block;
+    position: fixed;
+}
+
+.img1 {
+    left: 50%;
+    top: 30%;
+    height: 250px;
 }
