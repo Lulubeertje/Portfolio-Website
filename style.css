@@ -1,5 +1,7 @@
+/* Import een font van google*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
+/*Past regels aan voor hele document*/
 * {
     margin: 0;
     padding: 0;
@@ -7,11 +9,13 @@
     font-family: 'Poppins', sans-serif;
 }
 
+/*Geeft het document kleur*/
 body {
     background: #081b29;
     color: #ededed;
 }
 
+/*Geeft de regels voor de header*/
 .header {
     position: fixed;
     top: 0;
@@ -25,6 +29,7 @@ body {
     z-index: 100;
 }
 
+/*Geeft regels voor "logo" linksboven*/
 .logo {
     font-size: 25px;
     color: #ededed;
@@ -32,6 +37,7 @@ body {
     font-weight: 600;
 }
 
+/*Geeft regels voor de navbar (gedeelte header)*/
 .navbar a {
     font-size: 18px;
     color: #ededed;
@@ -41,11 +47,13 @@ body {
     transition: 0.4s;
 }
 
+/*Geeft regels voor navbar als je er over hovert en als je klikt*/
 .navbar a:hover,
 .navbar a.active {
     color: #00abf0;
 }
 
+/*Geeft regels voor een generale sectie in document*/
 .home {
     height: 100vh;
     display: flex;
@@ -53,27 +61,32 @@ body {
     padding: 0 10%;
 }
 
+/*Geeft regels voor een sectie binnen de generale sectie*/
 .home-content {
     max-width: 600px;
 }
 
+/*Geeft regels voor het h1 element*/
 .home-content h1 {
     font-size: 56px;
     font-weight: 700;
     line-height: 1.2;
 }
 
+/*Geeft regels voor het h3 element binnen deze sectie*/
 .home-content h3 {
     font-size: 32px;
     font-weight: 700;
     color: #00abf0;
 }
 
+/*Geeft regels voor het p element binnen deze sectie*/
 .home-content p {
     font-size: 14px;
     margin: 20px 0 40px;
 }
 
+/*Geeft regels voor het element waarbinnen de knoppen zich bevinden*/
 .home-content .btn-box {
     display: flex;
     justify-content: space-between;
@@ -81,6 +94,7 @@ body {
     height: 50px;
 }
 
+/*Geeft regels voor de knoppen*/
 .btn-box a {
     position: relative;
     display: inline-flex;
@@ -101,23 +115,28 @@ body {
     transition: 0.5;
 }
 
+/*Geeft regels voor de linker knop tijdens het hover er over*/
 .btn-box a:hover {
     color: #00abf0;
 }
 
+/*Geeft regels voor de rechter knop*/
 .btn-box a:nth-child(2) {
     background: transparent;
     color: #00abf0;
 }
 
+/*Geeft regels voor de rechter knop bij het hoveren*/
 .btn-box a:nth-child(2):hover {
     color: #081b29;
 }
 
+/*Geeft regels voor het veranderen van kleur van de rechter knop*/
 .btn-box a:nth-child(2)::before {
     background: #00abf0;
 }
 
+/*Geeft regels voor het veranderen van de knoppen*/
 .btn-box a::before {
     content: '';
     position: absolute;
@@ -130,10 +149,12 @@ body {
     transition: 0.5s;
 }
 
+/*Geeft regels voor het veranderen van de knoppen*/
 .btn-box a:hover::before {
     width: 100%;
 }
 
+/*Geeft regels voor het element met daarin knopje met links*/
 .home-sci {
     position: absolute;
     bottom: 40px;
@@ -142,6 +163,7 @@ body {
     justify-content: space-between;
 }
 
+/*Geeft regels voor de links in de sectie*/
 .home-sci a {
     position: relative;
     display: inline-flex;
