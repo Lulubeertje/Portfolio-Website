@@ -238,13 +238,13 @@ body {
     display: flex;
     align-items: center;
 }
-
+/* regels voor de tekst in de about me sectie*/
 .abtme p {
     font-size: 21px;
     text-align: start;
     flex: 1;
 }
-
+/*regels voor de foto in de aobut me sectie*/
 .photo1 {
     margin-right: 20px;
     float: left;
