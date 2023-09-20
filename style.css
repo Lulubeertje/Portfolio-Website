@@ -68,7 +68,7 @@ body {
 
 /*Geeft regels voor het h1 element*/
 .home-content h1 {
-    font-size: 56px;
+    font-size: 45px;
     font-weight: 700;
     line-height: 1.2;
 }
@@ -202,16 +202,52 @@ body {
     color: #081b29;
 }
 
-
+/*regels voor foto op home-pagina*/
 .home-content img {
     display: inline-block;
     position: fixed;
-}
-
-.img1 {
     border: 5px ridge #00abf0;
     border-radius: 25%;
     left: 52.5%;
     top: 25%;
     height: 500px;
+}
+/*Regels voor main gedeelte van about me*/
+.abtme {
+    width: 60vw;
+    position: relative;
+    top: 10vh;
+    left: 20vw;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/*Regels voor h2 gedeelte van about me*/
+.abtme h2 {
+    color: #081b29;
+    font-size: 42px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 3px solid #00abf0;
+    background-color: #00abf0;
+    border-radius: 20px;
+}
+/*volgende 3 stukjes zorgen er voor dat de tekst rondom de foto kan lopen (maar niet h2)*/
+.about-main-content {
+    display: flex;
+    align-items: center;
+}
+
+.abtme p {
+    font-size: 21px;
+    text-align: start;
+    flex: 1;
+}
+
+.photo1 {
+    margin-right: 20px;
+    float: left;
+    border: 3px solid #00abf0;
+    border-radius: 12.5%;
 }
