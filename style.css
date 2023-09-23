@@ -15,7 +15,13 @@ body {
     color: #ededed;
 }
 
-/*Geeft de regels voor de header*/
+main {
+    height: 100vh;
+    width: 100vw;
+}
+
+
+/*Geeft de regels voor de header || background voor als ik scroll!*/
 .header {
     position: fixed;
     top: 0;
@@ -27,6 +33,7 @@ body {
     justify-content: space-between;
     align-items: center;
     z-index: 100;
+    background: #081b29;
 }
 
 /*Geeft regels voor "logo" linksboven*/
@@ -258,9 +265,60 @@ body {
     opacity: 80%;
 }
 
-#portmain {
+
+#portdiv1 {
+    margin-left: 10vw;
+    margin-right: 10vw;
     display: block;
     position: relative;
     top: 10vh;
-    border: 1px solid white;
+    text-align: center;
 }
+
+#portdiv1 h1 {
+    text-align: center;
+}
+
+.portlist dl {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 10px;
+    align-items: center;
+    list-style: none;
+    left: 10vw;
+    width: 80vw;
+    position: relative;
+    top: 12.5vh;
+
+}
+.portlist img{
+    max-width: 250px;
+    margin-right: 10px;
+    margin-bottom: 1vh;
+    margin-top: 1vh;
+}
+
+dl a {
+    text-decoration: none;
+    color: white;
+}
+
+.porttitle {
+    align-self: center;
+    margin-bottom: 1%;
+    margin-right: 2.5vw;
+    margin-left: 0.5vw;
+    
+}
+
+#pim1 {
+    align-self: left;
+    display: block;
+    height: 200px;
+    width: 200px;
+}
+
+.desc {
+
+}
+
