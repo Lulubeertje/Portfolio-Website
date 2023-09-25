@@ -33,7 +33,7 @@ main {
     justify-content: space-between;
     align-items: center;
     z-index: 100;
-    background: #081b29;
+    background: transparent;
 }
 
 /*Geeft regels voor "logo" linksboven*/
@@ -316,4 +316,30 @@ dl a {
     display: block;
     height: 200px;
     width: 200px;
+}
+
+#cv-div {
+    height: fit-content;
+    width: fit-content;
+    position: absolute;
+    top: 125px;
+    left: 40vw;
+}
+
+.download {
+    color: #081b29;
+    border: 2px solid #00abf0;
+    border-radius: 10px;
+    background-color: #00abf0;
+    transition: 0.3s;
+}
+
+.download h2{
+    font-size: 36px;
+    padding: 20px;
+}
+
+.download:hover {
+    background-color: transparent;
+    color: #00abf0;
 }
