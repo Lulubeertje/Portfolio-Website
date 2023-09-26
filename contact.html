@@ -1,0 +1,56 @@
+<!--Geeft de taal van de site aan-->
+<html lang="en-US">
+
+<!--Regelt metadata en links aan css etc.-->
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <title>| Porfolio website |</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="icon" href="/images/favicon.png">
+</head>
+
+<!--Het document zelf, en alle elementen er in-->
+<body>
+    
+    <!--De header, staat bovenaan-->
+    <header class="header">
+        <a href="index.html" class="logo">Luis Martinez Drenth.</a>
+        
+        <!--navbar, home about me, etc-->
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="portfolio.html">Portolio</a>
+            <a href="contact.html"  class="active">Contact</a>
+        </nav>
+    </header>        
+    
+    <main>
+        <div class="popup" id="popup">
+            <div class="overlay"></div>
+            <div class="popupwrapper">
+                <h1>My contact info:</h1>
+                <p>Name: Luis Martinez Drenth</p>
+                <p>Phone number: +31611537014</p>
+                <p>Email: <a class="link" href="mailto:>luismd1502@gmail.com">luismd1502@gmail.com</a></p>
+                <a href="https://www.linkedin.com/in/luis-martinez-drenth-8b66b9132/" class="link" target="_blank"><p>Linked in</p></a>
+                <a href="#" class="close-btn">×</a>
+            </div>
+        </div>
+        <div class="cv-text">
+            <h1>Get in contact with me!</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus iste, optio nisi nihil porro molestiae eius accusamus similique, ullam esse omnis? Deserunt, perferendis. Ducimus, sit consequatur dicta reprehenderit obcaecati fuga.</p>
+            <div class="imgdiv">
+                <img src="/images/Headshot.jpg" alt="A picture of me">
+            </div>
+            <a href="#popup" class="link"><button class="btn-style">My Information</button></a>
+        </div>
+    </main>
+
+</body>
+
+
+
+</html>
