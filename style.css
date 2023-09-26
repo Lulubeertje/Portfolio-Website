@@ -96,6 +96,7 @@ main {
 .home-content p {
     font-size: 14px;
     margin: 20px 0 40px;
+    width: 20rem;
 }
 
 /*Geeft regels voor het element waarbinnen de knoppen zich bevinden*/
@@ -280,7 +281,7 @@ main {
 }
 
 .portlist dl {
-    display: grid;
+    display: flex;
     grid-template-columns: auto 1fr;
     gap: 10px;
     align-items: center;
@@ -292,15 +293,22 @@ main {
 
 }
 .portlist img{
-    max-width: 250px;
+    border: 2px solid #00abf0;
+    border-radius: 2rem;
+    min-height: fit-content;
+    min-width:fit-content;
     margin-right: 10px;
     margin-bottom: 1vh;
     margin-top: 1vh;
+    float: left;
 }
 
 dl a {
     text-decoration: none;
     color: white;
+}
+dd p {
+    clear: both;
 }
 
 .porttitle {
@@ -402,7 +410,7 @@ dl a {
     position: absolute;
     font-size: 18px;
     left: 12rem;
-    top: 10rem;
+    top: 20rem;
     line-height: 2rem;
     font-weight: 600;
     width: 40rem;
@@ -414,6 +422,7 @@ dl a {
 }
 
 .cv-text p {
+    text-align: center;
     margin-bottom: 2rem;
 }
 
@@ -431,6 +440,11 @@ dl a {
     font-size: 16px;
     transition: background-color 0.3s, color 0.3s;
     cursor: pointer;
+}
+
+#infobtn {
+    position: absolute;
+    left: 35%;
 }
 
 .btn-style:hover {
@@ -454,7 +468,8 @@ dl a {
 .imgdiv img {
     position: absolute;
     left: 50rem;
-    top: 2rem;
+    bottom: -12.5rem;
     height: 500px;
     border-radius: 5rem;
+    border: 2px solid #00abf0;
 }
