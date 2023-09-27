@@ -125,7 +125,7 @@ main {
     letter-spacing: 1px;
     z-index: 1;
     overflow: hidden;
-    transition: 0.5;
+    transition: 0.65;
 }
 
 /*Geeft regels voor de linker knop tijdens het hover er over*/
@@ -159,7 +159,7 @@ main {
     height: 100%;
     background: #081b29;
     z-index: -1;
-    transition: 0.5s;
+    transition: 0.65s;
 }
 
 /*Geeft regels voor het veranderen van de knoppen*/
@@ -192,7 +192,7 @@ main {
     color: #00abf0;
     text-decoration: none;
     z-index: 1;
-    transition: 0.5;
+    transition: 0.7;
 }
 /*Geeft de regels voor de socials' knopjes*/
 .home-sci a::before {
@@ -204,7 +204,7 @@ main {
     height: 100%;
     background: #00abf0;
     z-index: -1;
-    transition: 0.5s;
+    transition: 0.7s;
 }
 /*Geeft de regels voor de socials' knopjes*/
 .home-sci a:hover::before {
@@ -316,6 +316,7 @@ dd p {
     margin-bottom: 1%;
     margin-right: 2.5vw;
     margin-left: 0.5vw;
+    width: 17.5rem;
     
 }
 
