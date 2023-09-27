@@ -227,6 +227,7 @@ main {
 }
 /*Regels voor main gedeelte van about me*/
 .abtme {
+    height: 80vh;
     width: 60vw;
     position: relative;
     top: 10vh;
@@ -246,6 +247,11 @@ main {
     background-color: #00abf0;
     border-radius: 20px;
 }
+
+.abtme p {
+    margin-left: 20px;
+}
+
 /*volgende 3 stukjes zorgen er voor dat de tekst rondom de foto kan lopen (maar niet h2)*/
 .about-main-content {
     display: flex;
@@ -369,9 +375,12 @@ dd p {
 }
 
 .popup:target {
+    background-color: rgba(46, 46, 46, 0.411);
     display: block;
     opacity: 1;
-    height: 90vh;
+    height: 100vh;
+    width: 100vw;
+    left: 0;
 }
 
 .overlay {
@@ -380,8 +389,9 @@ dd p {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: hsl(205, 67%, 10%);
+    background-color: transparent;
     z-index: -1;
+    
 }
 
 .popupwrapper {
@@ -389,13 +399,15 @@ dd p {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    height: 40vh;
-    width: 80vw;
-    background-color: #00abf0;
+    height: 35vh;
+    width: 40vw;
+    background-color: #081b29;
     z-index: 2;
     text-align: center;
     padding: 20px;
     border-radius: 20px;
+    border: 0.2rem solid #00abf0;
+    box-shadow: black 16px 16px 16px;
 }
 
 .popupwrapper h1 {
@@ -406,6 +418,13 @@ dd p {
 .popupwrapper p {
     margin-top: 2rem;
 }
+
+
+.link2 {
+    text-decoration: underline;
+    color: #ededed;
+}
+
 
 .cv-text {
     position: absolute;
@@ -434,13 +453,14 @@ dd p {
 
 .btn-style {
     border: 2px solid #00abf0;
-    border-radius: 3px;
+    border-radius: 9px;
     background-color: #00abf0;
     color: #081b29;
     padding: 10px 20px;
     font-size: 16px;
     transition: background-color 0.3s, color 0.3s;
     cursor: pointer;
+
 }
 
 #infobtn {
@@ -454,8 +474,8 @@ dd p {
 }
 .close-btn {
     position: absolute;
-    top: 20px;
-    right: 20px;
+    top: 2%;
+    right: 2%;
     font-size: 24px;
     color: #ededed;
     text-decoration: none;
