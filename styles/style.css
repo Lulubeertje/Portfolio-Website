@@ -329,8 +329,8 @@ dd p {
 .pim1 {
     align-self: left;
     display: block;
-    height: 200px;
-    width: 200px;
+    min-width: 10.5vw;
+    max-height: 22vh;
 }
 
 #cv-btn {
