@@ -326,7 +326,7 @@ dd p {
     
 }
 
-#pim1 {
+.pim1 {
     align-self: left;
     display: block;
     height: 200px;
