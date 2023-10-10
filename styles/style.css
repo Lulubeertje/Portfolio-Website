@@ -421,14 +421,18 @@ dd p {
 
 
 .cv-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     position: absolute;
     top: 50%;
-    left:35%;
+    left:20%;
     translate:-50% -50%;
-    font-size: 18px;
+    font-size: 1.2rem;
     line-height: 2rem;
     font-weight: 600;
-    width: 40rem;
+    width: 30%;
+    height: max-content;
 }
 
 .cv-text h1 {
@@ -459,7 +463,7 @@ dd p {
 }
 
 #infobtn {
-    position: absolute;
+    position: unset;
     left: 35%;
 }
 
@@ -482,10 +486,359 @@ dd p {
 }
 
 .imgdiv img {
-    position: absolute;
-    left: 50rem;
-    bottom: -12.5rem;
-    height: 500px;
+    position: fixed;
+    top: 50%;
+    left:55%;
+    translate: 0% -50%;
+    width: 500px;
     border-radius: 5rem;
     border: 2px solid #00abf0;
+}
+
+
+@media screen and (max-width: 1440px) {
+
+    /* ABOUT ME */
+
+    .about-main-content {
+        display: flex;
+        align-items: center;
+        gap: 10%;
+        margin-top: 3%;
+    }
+
+    .abtme {
+        height: max-content;
+        position: relative;
+        top: 50vh;
+        translate: 0% -50%;
+    }
+
+
+    .abtme h1 {
+        color: #081b29;
+        font-size: 32px;
+        margin-bottom: 20px;
+        padding: 10px;
+        border: 3px solid #00abf0;
+        background-color: #00abf0;
+        border-radius: 20px;
+    }
+    .abtme p {
+        font-size: 16px;
+        text-align: start;
+        flex: 1;
+        margin-left: 20px;
+    }
+    .photo1 {
+        width: 40%;
+    }
+
+    /* CONTACT */
+    .cv-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        top: 50%;
+        left:20%;
+        translate:-50% -50%;
+        font-size: 1rem;
+        line-height: 2rem;
+        font-weight: 600;
+        width: 30%;
+        height: max-content;
+    }
+    
+    .cv-text h1 {
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+    
+    .cv-text p {
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    /* ABOUT */
+
+    .about-main-content {
+        column-gap: 3%;
+    }
+    .photo1 {
+        width: 375px;
+    }
+
+
+     /* CONTACT */
+
+     .cv-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        top: 50%;
+        left:20%;
+        translate:-50% -50%;
+        font-size: 0.8rem;
+        line-height: 2rem;
+        font-weight: 600;
+        width: 30%;
+        height: max-content;
+    }
+    
+    .cv-text h1 {
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+    
+    .cv-text p {
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    .imgdiv img {
+        position: fixed;
+        top: 50%;
+        left:55%;
+        translate: 0% -50%;
+        width: 400px;
+        border-radius: 5rem;
+        border: 2px solid #00abf0;
+    }
+
+    .popupwrapper p {
+        font-size: 0.8em;
+    }
+
+    .popupwrapper h1 {
+        font-size: 2em;
+        line-height: 1em;
+    }
+}
+
+@media screen and (max-width: 845px) {
+    /*Geeft de regels voor de header || background voor als ik scroll!*/
+    .header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 20px 10%;
+        background: transparent;
+        display: flex;
+        justify-content: end;
+        column-gap: 0px;
+        align-items: center;
+        z-index: 100;
+        background: transparent;
+    }
+
+    /*Geeft regels voor "logo" linksboven*/
+    .logo {
+        font-size: 15px;
+        color: #ededed;
+        text-decoration: none;
+        font-weight: 600;
+        transition: 0.5s;
+    }
+
+    .logo:hover, .logo:active {
+        color: #00abf0;
+    }
+
+    /*Geeft regels voor de navbar (gedeelte header)*/
+    .navbar a {
+        font-size: 12px;
+        color: #ededed;
+        text-decoration: none;
+        font-weight: 500;
+        margin-left: 35px;
+        transition: 0.4s;
+    }
+
+    .navbar a:nth-child(4){
+        margin-left: 20px;
+    }
+
+    /*Geeft regels voor navbar als je er over hovert en als je klikt*/
+    .navbar a:hover,
+    .navbar a.active {
+        color: #00abf0;
+    }
+
+    .home-content img {
+        display: inline;
+        opacity: 70%;
+        z-index: -4;
+        position: fixed;
+        border: 2px inset #00abf0;
+        border-radius: 12.5%;
+        left: 50%;
+        top: 32.5%;
+        translate: -50% -50%;
+        height: 350px;
+    }
+
+    /*Geeft regels voor een sectie binnen de generale sectie*/
+    .home-content {
+        position: fixed;
+        top: 57.5%;
+        max-width: 100%;
+        height: max-content;
+    }
+
+    /*Geeft regels voor het h1 element*/
+    .home-content h1 {
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 1.2;
+    }
+
+    /*Geeft regels voor het h3 element binnen deze sectie*/
+    .home-content h3 {
+        font-size: 24px;
+        font-weight: 700;
+        color: #00abf0;
+    }
+
+    /*Geeft regels voor het p element binnen deze sectie*/
+    .home-content p {
+        font-size: 14px;
+        margin: 20px 0 40px;
+        width: 20rem;
+    }
+
+    /*Geeft regels voor het element waarbinnen de knoppen zich bevinden*/
+    .home-content .btn-box {
+        position: inherit;
+        display: flex;
+        justify-content: space-between;
+        width: 350px;
+        height: 50px;
+        translate: -7% 0%;
+    }
+
+    /*Geeft regels voor de knoppen*/
+    .btn-box a {
+        position: relative;
+        display: inline-flex;
+        justify-content: space;
+        align-items: center;
+        width: 150px;
+        height: 100%;
+        background: #00abf0;
+        border: 2px solid #00abf0;
+        border-radius: 9px;
+        font-size: 15px;
+        color: #081b29;
+        text-decoration: none;
+        font-weight: 600;
+        letter-spacing: 1px;
+        z-index: 1;
+        overflow: hidden;
+        transition: 0.65;
+    }
+
+    /* ABOUT */
+    .abtme {
+        position: fixed;
+        top: 450px;
+        font-size: 12px;
+    }
+
+    .abtme p{
+        font-size: 12px;
+    }
+
+    .about-main-content {
+        column-gap: 3%;
+        display: flex;
+        flex-wrap: wrap-reverse;
+        align-items: center;
+        align-content: center;
+        row-gap: 1rem;
+        line-height: 1.25rem;
+        font-size: 0.6rem;
+    }
+    .photo1 {
+        display: block;
+        width: 250px;
+    }
+
+
+
+    /* PORTFOLIO */
+    .pim {
+        display: none;
+    }
+
+    #pim1 {
+        display: inline;
+        width: 100%;
+        border-radius: 1rem;
+    }
+
+    .portlist dl {
+        font-size: 0.8rem;
+    }
+
+    .mainh1 {
+        font-size: 24px;
+        
+    }
+
+     /* CONTACT */
+
+     .cv-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        translate:-50% -50%;
+        font-size: 0.8rem;
+        line-height: 2rem;
+        font-weight: 600;
+        width: 80%;
+        height: max-content;
+    }
+    
+    .cv-text h1 {
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+    
+    .cv-text p {
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    .imgdiv img {
+        display: none;
+        position: fixed;
+        top: 50%;
+        left:55%;
+        translate: 0% -50%;
+        width: 400px;
+        border-radius: 5rem;
+        border: 2px solid #00abf0;
+    }
+
+    .popupwrapper{
+        height: max-content;
+        width: max-content;
+    }
+
+    .popupwrapper p {
+        font-size: 0.8em;
+    }
+
+    .popupwrapper h1 {
+        font-size: 2em;
+        line-height: 1em;
+    }    
 }
