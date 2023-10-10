@@ -393,7 +393,7 @@ dd p {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    height: 35vh;
+    height: max-content;
     width: 40vw;
     background-color: #081b29;
     z-index: 2;
@@ -496,7 +496,13 @@ dd p {
 }
 
 
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 1600px) {
+
+    /* HOME */
+    .home-content img {
+        height: 300px;
+
+    }
 
     /* ABOUT ME */
 
@@ -604,9 +610,13 @@ dd p {
         top: 50%;
         left:55%;
         translate: 0% -50%;
-        width: 400px;
+        width: 350px;
         border-radius: 5rem;
         border: 2px solid #00abf0;
+    }
+
+    .popupwrapper {
+        height: max-content;
     }
 
     .popupwrapper p {
