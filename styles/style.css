@@ -298,16 +298,6 @@ main {
     top: 12.5vh;
 
 }
-.portlist img{
-    border: 2px solid #00abf0;
-    border-radius: 2rem;
-    min-height: fit-content;
-    min-width:fit-content;
-    margin-right: 10px;
-    margin-bottom: 1vh;
-    margin-top: 1vh;
-    float: left;
-}
 
 dl a {
     text-decoration: none;
@@ -326,13 +316,17 @@ dd p {
     
 }
 
-.pim1 {
+.pim {
+    border: 2px solid #00abf0;
+    border-radius: 2rem;
+    margin-right: 10px;
+    margin-bottom: 1vh;
+    margin-top: 1vh;
+    float: left;
     align-self: left;
-    display: block;
-    min-width: 10.5vw;
-    max-height: 22vh;
-}
+    width: 32%;
 
+}
 #cv-btn {
     height: fit-content;
     width: fit-content;
@@ -428,9 +422,10 @@ dd p {
 
 .cv-text {
     position: absolute;
+    top: 50%;
+    left:35%;
+    translate:-50% -50%;
     font-size: 18px;
-    left: 12rem;
-    top: 20rem;
     line-height: 2rem;
     font-weight: 600;
     width: 40rem;
