@@ -629,7 +629,7 @@ dd p {
         padding: 20px 10%;
         background: transparent;
         display: flex;
-        justify-content: end;
+        justify-content: space-around;
         column-gap: 0px;
         align-items: center;
         z-index: 100;
@@ -638,7 +638,7 @@ dd p {
 
     /*Geeft regels voor "logo" linksboven*/
     .logo {
-        font-size: 15px;
+        font-size: 16px;
         color: #ededed;
         text-decoration: none;
         font-weight: 600;
@@ -677,15 +677,15 @@ dd p {
         border: 2px inset #00abf0;
         border-radius: 12.5%;
         left: 50%;
-        top: 32.5%;
+        top: 31%;
         translate: -50% -50%;
-        height: 350px;
+        height: 200px;
     }
 
     /*Geeft regels voor een sectie binnen de generale sectie*/
     .home-content {
         position: fixed;
-        top: 57.5%;
+        top: 50%;
         max-width: 100%;
         height: max-content;
     }
@@ -707,7 +707,7 @@ dd p {
     /*Geeft regels voor het p element binnen deze sectie*/
     .home-content p {
         font-size: 14px;
-        margin: 20px 0 40px;
+        margin: 10px 0 20px;
         width: 20rem;
     }
 
@@ -716,9 +716,10 @@ dd p {
         position: inherit;
         display: flex;
         justify-content: space-between;
-        width: 350px;
-        height: 50px;
-        translate: -7% 0%;
+        width: 325px;
+        height: 35px;
+        align-self: flex-start;
+        padding-right: 20px;
     }
 
     /*Geeft regels voor de knoppen*/
@@ -744,9 +745,16 @@ dd p {
 
     /* ABOUT */
     .abtme {
-        position: fixed;
-        top: 450px;
+        top: 50%;
+        left: 50%;
+        translate: -50% -50%;
+        position: absolute;
         font-size: 12px;
+        width: 300px;
+    }
+
+    .abtme h1 {
+        font-size: 24px;
     }
 
     .abtme p{
@@ -764,8 +772,10 @@ dd p {
         font-size: 0.6rem;
     }
     .photo1 {
-        display: block;
+        display: none;
         width: 250px;
+        opacity: 50%;
+
     }
 
 
@@ -808,6 +818,7 @@ dd p {
     }
     
     .cv-text h1 {
+        font-size: 24px;
         text-align: center;
         margin-bottom: 2rem;
     }
