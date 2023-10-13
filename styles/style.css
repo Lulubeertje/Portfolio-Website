@@ -16,10 +16,10 @@ body {
 }
 
 main {
-    height: 100vh;
-    width: 100vw;
+    min-height: max-content;
+    max-width: 100vw;
+    overflow-x: hidden;
 }
-
 
 /*Geeft de regels voor de header || background voor als ik scroll!*/
 .header {
@@ -33,7 +33,8 @@ main {
     justify-content: space-between;
     align-items: center;
     z-index: 100;
-    background: transparent;
+    background: #081b29;
+    border-bottom: 1px inset #00abf0;
 }
 
 /*Geeft regels voor "logo" linksboven*/
@@ -274,11 +275,11 @@ main {
 
 
 #portdiv1 {
-    margin-left: 10vw;
-    margin-right: 10vw;
     display: block;
-    position: relative;
-    top: 10vh;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    translate: -50%;
     text-align: center;
 }
 
@@ -286,17 +287,25 @@ main {
     text-align: center;
 }
 
+
+.portlist {
+    position: absolute;
+    top: 7.5%;
+    left: 5%;
+    width: 90%;
+    min-height: max-content;
+    overflow-y: visible;
+
+}
+
 .portlist dl {
     display: flex;
-    grid-template-columns: auto 1fr;
-    gap: 10px;
-    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
     list-style: none;
-    left: 10vw;
-    width: 80vw;
     position: relative;
-    top: 12.5vh;
-
+    top: 100px;
+    margin-bottom: 5%;
 }
 
 dl a {
@@ -310,10 +319,8 @@ dd p {
 .porttitle {
     align-self: center;
     margin-bottom: 1%;
-    margin-right: 2.5vw;
+    margin-right: 25px;
     margin-left: 0.5vw;
-    width: 17.5rem;
-    
 }
 
 .pim {
@@ -323,10 +330,17 @@ dd p {
     margin-bottom: 1vh;
     margin-top: 1vh;
     float: left;
-    align-self: left;
-    width: 32%;
-
+    justify-self: left;
+    min-width: 275px;
+    max-width: 25%;
+    height: auto;
 }
+
+.desc {
+    min-width: 100%;
+}
+
+
 #cv-btn {
     height: fit-content;
     width: fit-content;
@@ -495,7 +509,6 @@ dd p {
     border: 2px solid #00abf0;
 }
 
-
 @media screen and (max-width: 1600px) {
 
     /* HOME */
@@ -567,6 +580,14 @@ dd p {
     }
 }
 
+/* PORTFOLIO */
+.pimnohide {
+    display: inline;
+    width: 100%;
+    border-radius: 1rem;
+}
+
+
 @media screen and (max-width: 1200px) {
     /* ABOUT */
 
@@ -629,7 +650,14 @@ dd p {
     }
 }
 
-@media screen and (max-width: 845px) {
+/* PORTFOLIO */
+.pimnohide {
+    display: inline;
+    width: 100%;
+    border-radius: 1rem;
+}
+
+@media screen and (max-width: 850px) {
     /*Geeft de regels voor de header || background voor als ik scroll!*/
     .header {
         position: fixed;
@@ -780,6 +808,7 @@ dd p {
         row-gap: 1rem;
         line-height: 1.25rem;
         font-size: 0.6rem;
+        width: 800px;
     }
     .photo1 {
         display: none;
@@ -791,14 +820,20 @@ dd p {
 
 
     /* PORTFOLIO */
+
+    .portdiv1 {
+        top: 15%;
+    }
+
     .pim {
         display: none;
     }
 
-    #pim1 {
+    .pimnohide {
         display: inline;
         width: 100%;
         border-radius: 1rem;
+        width: 10px;
     }
 
     .portlist dl {
@@ -808,6 +843,256 @@ dd p {
     .mainh1 {
         font-size: 24px;
         
+    }
+
+     /* CONTACT */
+
+     .cv-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        translate:-50% -50%;
+        font-size: 0.8rem;
+        line-height: 2rem;
+        font-weight: 600;
+        width: 80%;
+        height: max-content;
+    }
+    
+    .cv-text h1 {
+        font-size: 24px;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+    
+    .cv-text p {
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    .imgdiv img {
+        display: none;
+        position: fixed;
+        top: 50%;
+        left:55%;
+        translate: 0% -50%;
+        width: 400px;
+        border-radius: 5rem;
+        border: 2px solid #00abf0;
+    }
+
+    .popupwrapper{
+        height: max-content;
+        width: max-content;
+    }
+
+    .popupwrapper p {
+        font-size: 0.8em;
+    }
+
+    .popupwrapper h1 {
+        font-size: 2em;
+        line-height: 1em;
+    }    
+}
+
+@media screen and (max-width: 400px) {
+    /*Geeft de regels voor de header || background voor als ik scroll!*/
+    .header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 20px 10%;
+        background: transparent;
+        display: flex;
+        justify-content: space-around;
+        column-gap: 0px;
+        align-items: center;
+        z-index: 100;
+        background: #081b29;
+        border-bottom: 2px inset #00abf0;
+    }
+
+    /*Geeft regels voor "logo" linksboven*/
+    .logo {
+        font-size: 16px;
+        color: #ededed;
+        text-decoration: none;
+        font-weight: 600;
+        transition: 0.5s;
+    }
+
+    .logo:hover, .logo:active {
+        color: #00abf0;
+    }
+
+    /*Geeft regels voor de navbar (gedeelte header)*/
+    .navbar a {
+        font-size: 12px;
+        color: #ededed;
+        text-decoration: none;
+        font-weight: 500;
+        margin-left: 35px;
+        transition: 0.4s;
+    }
+
+    .navbar a:nth-child(4){
+        margin-left: 20px;
+    }
+
+    /*Geeft regels voor navbar als je er over hovert en als je klikt*/
+    .navbar a:hover,
+    .navbar a.active {
+        color: #00abf0;
+    }
+
+    .home-content img {
+        display: inline;
+        opacity: 70%;
+        z-index: -4;
+        position: fixed;
+        border: 2px inset #00abf0;
+        border-radius: 12.5%;
+        left: 50%;
+        top: 31%;
+        translate: -50% -50%;
+        height: 200px;
+    }
+
+    /*Geeft regels voor een sectie binnen de generale sectie*/
+    .home-content {
+        position: fixed;
+        top: 50%;
+        max-width: 100%;
+        height: max-content;
+    }
+
+    /*Geeft regels voor het h1 element*/
+    .home-content h1 {
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 1.2;
+    }
+
+    /*Geeft regels voor het h3 element binnen deze sectie*/
+    .home-content h3 {
+        font-size: 24px;
+        font-weight: 700;
+        color: #00abf0;
+    }
+
+    /*Geeft regels voor het p element binnen deze sectie*/
+    .home-content p {
+        font-size: 14px;
+        margin: 10px 0 20px;
+        width: 20rem;
+    }
+
+    /*Geeft regels voor het element waarbinnen de knoppen zich bevinden*/
+    .home-content .btn-box {
+        position: inherit;
+        display: flex;
+        justify-content: space-between;
+        width: 325px;
+        height: 35px;
+        align-self: flex-start;
+        padding-right: 20px;
+    }
+
+    /*Geeft regels voor de knoppen*/
+    .btn-box a {
+        position: relative;
+        display: inline-flex;
+        justify-content: space;
+        align-items: center;
+        width: 150px;
+        height: 100%;
+        background: #00abf0;
+        border: 2px solid #00abf0;
+        border-radius: 9px;
+        font-size: 15px;
+        color: #081b29;
+        text-decoration: none;
+        font-weight: 600;
+        letter-spacing: 1px;
+        z-index: 1;
+        overflow: hidden;
+        transition: 0.65;
+    }
+
+    /* ABOUT */
+    .abtme {
+        top: 50%;
+        left: 50%;
+        translate: -50% -50%;
+        position: absolute;
+        font-size: 12px;
+        width: 300px;
+    }
+
+    .abtme h1 {
+        font-size: 24px;
+    }
+
+    .abtme p{
+        font-size: 12px;
+    }
+
+    .about-main-content {
+        column-gap: 3%;
+        display: flex;
+        flex-wrap: wrap-reverse;
+        align-items: center;
+        align-content: center;
+        row-gap: 1rem;
+        line-height: 1.25rem;
+        font-size: 0.6rem;
+    }
+    .photo1 {
+        display: none;
+        width: 250px;
+        opacity: 50%;
+
+    }
+
+
+
+    /* PORTFOLIO */
+
+    #portdiv1 {
+        position: absolute;
+        top: 15%;
+    }
+
+    .pim {
+        display: none;
+    }
+
+    .pimnohide {
+        display: inline;
+        width: 100%;
+        border-radius: 1rem;
+        width: 10px;
+    }
+
+    .portlist dl {
+        font-size: 0.8rem;
+    }
+
+    .mainh1 {
+        font-size: 20px;
+    }
+
+    dt a {
+        font-size: 16px;
+    }
+
+    dd p {
+        font-size: 12px;
     }
 
      /* CONTACT */
