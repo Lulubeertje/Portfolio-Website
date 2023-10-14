@@ -77,6 +77,9 @@ main {
 /*Geeft regels voor een sectie binnen de generale sectie*/
 .home-content {
     max-width: 600px;
+    position: fixed;
+    top: 25%;
+    left: 10%;
 }
 
 /*Geeft regels voor het h1 element*/
