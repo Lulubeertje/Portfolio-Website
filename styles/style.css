@@ -1205,6 +1205,8 @@ dd p {
         color: #00abf0;
     }
 
+    /* HOME */
+
     .home-content img {
         display: inline;
         opacity: 70%;
@@ -1256,6 +1258,10 @@ dd p {
         height: 35px;
         align-self: flex-start;
         padding-right: 20px;
+    }
+
+    .home-sci {
+        position: fixed;
     }
 
     /*Geeft regels voor de knoppen*/
