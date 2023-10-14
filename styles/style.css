@@ -1152,7 +1152,7 @@ dd p {
 @media screen and (max-width: 400px) {
     /*Geeft de regels voor de header || background voor als ik scroll!*/
 
-    .home {
+    .noscroll {
         overflow-y: hidden;
     }
 
