@@ -78,7 +78,7 @@ main {
 .home-content {
     max-width: 600px;
     position: fixed;
-    top: 25%;
+    top: 35%;
     left: 10%;
 }
 
@@ -176,6 +176,7 @@ main {
     position: absolute;
     bottom: 40px;
     width: 170px;
+    left: 10%;
     display: flex;
     justify-content: space-between;
 }
