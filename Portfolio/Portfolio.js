@@ -1,19 +1,38 @@
-import portfolio from "./data/data.json" assert { type: "json" };
+let portfolio; // Declare the 'portfolio' variable in a broader scope
 
-let ProjectTitle;
-let ProjectLink;
-let Image1;
-let Image2;
-let Image3;
-let DescriptionText;
+var xhr = new XMLHttpRequest();
+xhr.open('GET', './data/data.json', true);
+xhr.onreadystatechange = function () {
+  if (xhr.readyState === 4) {
+    if (xhr.status === 200) {
+      portfolio = JSON.parse(xhr.responseText); // Assign the JSON data to the 'portfolio' variable
+      console.log(portfolio);
+      
+      // Your code to process 'portfolio' can be placed here or in a separate function
+      processPortfolio(portfolio);
+    } else {
+      console.error('Error loading the JSON file:', xhr.status, xhr.statusText);
+    }
+  }
+};
+xhr.send();
 
-for (let project in portfolio) {
-  ProjectTitle = portfolio[project].ProjectTitle;
-  ProjectLink = portfolio[project].ProjectLink;
-  Image1 = portfolio[project].Image1;
-  Image2 = portfolio[project].Image2;
-  Image3 = portfolio[project].Image3;
-  DescriptionText = portfolio[project].DescriptionText;
+// Define a function to process the 'portfolio' data
+function processPortfolio(portfolio) {
+  let ProjectTitle;
+  let ProjectLink;
+  let Image1;
+  let Image2;
+  let Image3;
+  let DescriptionText;
+
+  for (let project in portfolio) {
+    ProjectTitle = portfolio[project].ProjectTitle;
+    ProjectLink = portfolio[project].ProjectLink;
+    Image1 = portfolio[project].Image1;
+    Image2 = portfolio[project].Image2;
+    Image3 = portfolio[project].Image3;
+    DescriptionText = portfolio[project].DescriptionText;
 
   /* Defines portlist */
   var portlist = document.getElementById("portlist");
@@ -66,4 +85,5 @@ for (let project in portfolio) {
   NewProject_Description_Text.innerText = DescriptionText;
   NewProject_Description.classList.add("desc");
   NewProject_Description.append(NewProject_Description_Text);
+  }
 }
