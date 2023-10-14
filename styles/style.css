@@ -1227,6 +1227,7 @@ dd p {
         top: 52.5%;
         max-width: 100%;
         height: max-content;
+        left: 5%;
     }
 
     /*Geeft regels voor het h1 element*/
