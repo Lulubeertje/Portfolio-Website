@@ -49,6 +49,7 @@ function processPortfolio(portfolio) {
 
   var NewProject_Title_link = document.createElement("a");
   NewProject_Title_link.href = ProjectLink;
+  NewProject_Title_link.target = "_blank";
   NewProject_Title.append(NewProject_Title_link);
 
   var NewProject_Title_Text = document.createElement("h2");
